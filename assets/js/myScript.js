@@ -5,6 +5,7 @@ function openMenu() {
   document.getElementById('openmenu').style.display="block";
   document.querySelector('.settings').style.display="none";
   document.getElementById('top').style.display='none';
+  document.querySelector('.settings').style.color="#44c281";
 }
 
 document.querySelector('.load-more').addEventListener('click', loadMore);
@@ -19,6 +20,7 @@ function closeMenu() {
   document.querySelector('#openmenu').style.display='none';
   document.querySelector('.settings').style.display='block';
   document.getElementById('top').style.display='block'
+  document.querySelector('.settings').style.color="#fff";
 }
 
 document.querySelector('.settings').addEventListener('click', openSettings);
@@ -27,6 +29,8 @@ function openSettings() {
   document.querySelector('.home-page').style.display='none';
   document.querySelector('.settings-page').style.display='block';
   document.querySelector('.personal-info').style.display='none';
+  document.querySelector('.deposit-list').style.display='none';
+  document.querySelector('.checking').style.display='none';
 }
 
 document.querySelector('.return-home').addEventListener('click', returnHome);
@@ -34,6 +38,10 @@ document.querySelector('.return-home').addEventListener('click', returnHome);
 function returnHome() {
   document.querySelector('.settings-page').style.display='none';
   document.querySelector('.home-page').style.display='block';
+  document.querySelector('.personal-info').style.display='none';
+  document.querySelector('#openmenu').style.display='none';
+  document.querySelector('.checking').style.display='none';
+  document.querySelector('.deposit-list').style.display='none';
 }
 
 
@@ -44,6 +52,8 @@ function showInfo() {
 
 
   document.querySelector('.settings-page').style.display='none';
+  document.querySelector('.checking').style.display='none';
+  document.querySelector('.deposit-list').style.display='none';
 
 }
 
@@ -54,6 +64,9 @@ function accountInfo() {
   document.querySelector('.checking').style.display='block';
 
   document.querySelector('.home-page').style.display='none';
+  document.querySelector('.deposit-list').style.display='none';
+  document.querySelector('.personal-info').style.display='none';
+  document.querySelector('.settings-page').style.display='none';
 }
 
 document.querySelector('.z').addEventListener('click', showDeposits);
@@ -68,6 +81,6 @@ document.querySelector('.rh').addEventListener('click', goHome);
 function goHome() {
   document.querySelector('.checking').style.display='none';
   document.querySelector('.home-page').style.display='block';
-
+  document.querySelector('.personal-info').style.display='none';
   document.querySelector('.deposit-list').style.display='none';
 }
