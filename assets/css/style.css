@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 *{
 	margin:0px;
 	padding:0px;
@@ -231,10 +231,12 @@ h6 {
   background-color: #44c281;
   width: 83%;
   text-align: right;
-  height: 12%;
+  height: 10%;
   margin-block-end: 2em;
   position: absolute;
-  font-size: 1.2em;
+  font-size: 1em;
+  left: 1em;
+  width: 20em;
 }
 
 .openmenu1 {
@@ -326,7 +328,7 @@ ul {
   background-color: #fff;
   padding: 2em;
   margin: 2em;
-
+  border: solid;
 }
 
 .personal-info div {
@@ -342,5 +344,26 @@ b {
 }
 
 .choose {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  align-items: center;
+}
+.choose button {
+  padding: 2em;
+  width: 20em;
+}
+
+.grey {
+  background-color: #bdbdbd;
+}
+
+.deposit-list{
+  display:none;
+  text-align: center;
+}
+.rh {
+  text-decoration: underline;
+  color:#33b672;
+  padding: 2em;
 }
